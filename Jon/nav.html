@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,15 +8,16 @@
   </head>
   <body>
     <nav id="navbar">
-      <ul>
-        <li><a href="#home">Destinos</a></li>
-        <li><a href="#news">Actividades</a></li>
-
-        <div class="logo">
-          <img src="img/logo.png" />
-          Turismo por Japón
-        </div>
+      <div class="logo">
+        <img src="img/logo.png" alt="Logo de Turismo por Japón" />
+        <span>Turismo por Japón</span>
+      </div>
+      <button id="menu-toggle" aria-label="Toggle navigation">☰</button>
+      <ul id="links">
+        <li><a href="#">Actividades</a></li>
+        <li><a href="#">Destinos</a></li>
       </ul>
     </nav>
+    <script src="nav.js"></script>
   </body>
 </html>
