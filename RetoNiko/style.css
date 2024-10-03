@@ -1,0 +1,77 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    z-index: 100;
+    text-align: right;
+  }
+  
+  nav {
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: end;
+  }
+  
+  nav ul {
+    list-style: none;
+    overflow: hidden; 
+
+  }
+  
+  nav ul li {
+    float: left;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  nav ul li a {
+    display: block;
+    padding: 10px;
+    color: #000000;
+    text-decoration: none;
+    
+  }
+  nav ul li:hover {
+    background: hsla(307, 100%, 50%, 0.212);
+  }
+  .parallax {
+    /* The image used */
+    background-image: url("img/fondo2.jpg");
+    background-image: linear-gradient(180deg);
+
+  
+    /* Set a specific height */
+    height: 100vh; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .slider-container {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    overflow-x: auto
+  
+  }
+  
+  .slider-container img {
+    flex: 0 0 100%;
+    width: 100%;
+    object-fit: cover;
+  
+    /* Vamos a añadir esto 👇 */
+    scroll-snap-align: center;
+  }
