@@ -8,10 +8,12 @@
 }
 
 #navbar {
+  width:  100%;
   position: sticky;
   top: 0; 
   z-index: 1000; 
   border-bottom: 1px solid rgba(211, 211, 211, 0.525);
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -31,7 +33,7 @@ ul {
   list-style-type: none;
   overflow: hidden;
   background-color: white;
-
+  padding-right: 20px;
 }
 
 li {
@@ -73,6 +75,31 @@ li a:hover::after {
   width: 60px;
   float: left;
   padding-right: 10px;
+}
+
+
+
+@media only screen and (max-width : 900px) {
+  #links {
+      display: none;
+      flex-direction: row;
+      width: 100%;
+      
+  }
+
+  #menu-toggle {
+      display: block;
+      margin-left: 23%;
+  }
+
+  .logo{
+      white-space: nowrap;
+      font-size: 14px; 
+  }
+
+  #navbar.active #links {
+      display: flex
+  }
 }
 
   .parallax {

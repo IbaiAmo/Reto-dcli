@@ -1,4 +1,5 @@
 #navbar {
+    width:  99%;
     position: sticky;
     top: 0; 
     z-index: 1000; 
@@ -23,7 +24,7 @@ ul {
     list-style-type: none;
     overflow: hidden;
     background-color: white;
-
+    padding-right: 20px;
 }
 
 li {
@@ -74,10 +75,17 @@ li a:hover::after {
         display: none;
         flex-direction: row;
         width: 100%;
+        
     }
 
     #menu-toggle {
         display: block;
+        margin-left: 23%;
+    }
+
+    .logo{
+        white-space: nowrap;
+        font-size: 14px; 
     }
 
     #navbar.active #links {
