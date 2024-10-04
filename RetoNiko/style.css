@@ -7,53 +7,79 @@
     box-sizing: border-box;
 }
 
-header {
-    background: rgb(255, 255, 255);
-    width: 100%;
-    height: 50px;
-    position: fixed;
-    z-index: 100;
-    text-align: right;
-  }
-  
-  nav {
-    width: 100%;
-    float: left;
-    display: flex;
-    justify-content: end;
-  }
-  
-  nav ul {
-    list-style: none;
-    overflow: hidden; 
+#navbar {
+  position: sticky;
+  top: 0; 
+  z-index: 1000; 
+  border-bottom: 1px solid rgba(211, 211, 211, 0.525);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
 
-  }
-  
-  nav ul li {
-    float: left;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-  }
-  nav ul li a {
-    display: block;
-    padding: 10px;
-    color: #000000;
-    text-decoration: none;
-    
-  }
-  nav ul li:hover {
-    background: hsla(307, 100%, 50%, 0.212);
-  }
+#menu-toggle {
+  display: none; 
+  background: none;
+  border: none;
+  color: black;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: white;
+
+}
+
+li {
+  display: inline-flex;
+  float: right;
+  padding: 10px;
+}
+
+li a {
+
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+li a:after {
+  content: "";
+  display: block;
+  height: 3px;
+  background-color: red;
+  transform: scale(0, 1);
+  transform-origin: center;
+  transition: transform .45s;
+}
+
+li a:hover::after {
+  transform: scale(1, 1);
+}
+
+.logo {
+  padding: 10px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 60px;
+  float: left;
+  padding-right: 10px;
+}
+
   .parallax {
-    /* The image used */
-    background-image: url("img/fondo2.jpg");
+    
+    background-image: url("img/Bienvenidos\ a.png");
     background-image: linear-gradient(180deg);
-
-  
-    /* Set a specific height */
-    height: 100vh; 
-  
-    /* Create the parallax scrolling effect */
+    height: 500px; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -62,7 +88,6 @@ header {
   .slider-container {
     display: flex;
     width: 100%;
-    height: 500px;
     overflow-x: auto
   
   }
@@ -70,8 +95,6 @@ header {
   .slider-container img {
     flex: 0 0 100%;
     width: 100%;
-    object-fit: cover;
-  
-    /* Vamos a añadir esto 👇 */
     scroll-snap-align: center;
+    background-image: linear-gradient(180deg,#ffffff);
   }
