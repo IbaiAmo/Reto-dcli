@@ -3,6 +3,7 @@
     top: 0; 
     z-index: 1000; 
     border-bottom: 1px solid rgba(211, 211, 211, 0.525);
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -66,14 +67,12 @@ li a:hover::after {
     padding-right: 10px;
 }
 
-body{
-    height: 100000px;
-}
+
 
 @media only screen and (max-width : 900px) {
     #links {
         display: none;
-        flex-direction: column;
+        flex-direction: row;
         width: 100%;
     }
 
