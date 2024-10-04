@@ -71,7 +71,7 @@ li a:hover::after {
 /* TARJETAS DESTINOS */
 .grid-container-tarjetas {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   padding: 20px;
 
@@ -254,11 +254,13 @@ li a:hover::after {
     animation-duration: 1.5s;
   }
 }
+
 /*Animacion cambio de imagen*/
 @keyframes fade {
   from {
     opacity: 0.4;
   }
+
   to {
     opacity: 1;
   }
@@ -267,20 +269,81 @@ li a:hover::after {
 /*************** TARJETAS REGIONES DE KANTO ***************/
 .grid-container-tarjetasKanto {
   display: grid;
-  grid-gap: 10px;
-  padding: 20px;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas de igual tamaño */
+  gap: 20px; /* Espacio entre las tarjetas */
+  width: 100%; /* Asegura que el contenedor ocupe el ancho completo */
+
 
   .cardKanto {
-    grid-row: 1 / 2;
-    background-image: url("./imgDestinos/kantoTarjeta.jpg");
-  }
-
-  .img {
+    position: relative;
     width: 100%;
+    height: 400px;
+    overflow: hidden;
   }
+  
+  .cardKanto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .containerTarjeta {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+  }
+  
+  .containerTarjeta h4 {
+    margin: 0;
+  }
+  
+  .containerTarjeta p {
+    margin-top: 10px;
+  }
+  
+  .btnTarjeta {
+    background-color: #3b5998;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btnTarjeta:hover {
+    background-color: #2a437a;
+  }
+  
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+/*************** Media navbar en movil ***************/
 @media only screen and (max-width: 900px) {
+
   /* Navbar */
   #links {
     display: none;
@@ -296,3 +359,8 @@ li a:hover::after {
     display: flex;
   }
 }
+
+
+
+
+/*BOTON*/
