@@ -1,12 +1,12 @@
 #navbar {
     position: sticky;
+    top: 0; 
+    z-index: 1000; 
     border-bottom: 1px solid rgba(211, 211, 211, 0.525);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-   
-
 }
 
 #menu-toggle {
@@ -66,6 +66,9 @@ li a:hover::after {
     padding-right: 10px;
 }
 
+body{
+    height: 100000px;
+}
 
 @media only screen and (max-width : 900px) {
     #links {
