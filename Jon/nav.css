@@ -1,94 +1,125 @@
-#navbar {
-    width:  99%;
-    position: sticky;
-    top: 0; 
-    z-index: 1000; 
-    border-bottom: 1px solid rgba(211, 211, 211, 0.525);
-    background-color: white;
+ /* Navbar */
+ #navbar {
+     width: 99%;
+     position: sticky;
+     top: 0;
+     z-index: 1000;
+     border-bottom: 1px solid rgba(211, 211, 211, 0.525);
+     background-color: white;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 10px;
+ }
+
+ #menu-toggle {
+     display: none;
+     background: none;
+     border: none;
+     color: black;
+     font-size: 24px;
+     cursor: pointer;
+ }
+
+ ul {
+     list-style-type: none;
+     overflow: hidden;
+     background-color: white;
+     padding-right: 20px;
+ }
+
+ li {
+     display: inline-flex;
+     float: right;
+     padding: 10px;
+ }
+
+ li a {
+
+     color: black;
+     text-align: center;
+     text-decoration: none;
+ }
+
+
+ li a:after {
+     content: "";
+     display: block;
+     height: 3px;
+     background-color: red;
+     transform: scale(0, 1);
+     transform-origin: center;
+     transition: transform .45s;
+ }
+
+ li a:hover::after {
+     transform: scale(1, 1);
+ }
+
+ .logo {
+     padding: 10px;
+     margin-left: 10px;
+     display: flex;
+     align-items: center;
+ }
+
+ .logo img {
+     width: 60px;
+     float: left;
+     padding-right: 10px;
+ }
+
+ /* Navbar */
+
+ /* Form */
+ .formulario{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-}
-
-#menu-toggle {
-    display: none; 
-    background: none;
-    border: none;
-    color: black;
-    font-size: 24px;
-    cursor: pointer;
-  }
-
-ul {
-    list-style-type: none;
-    overflow: hidden;
-    background-color: white;
-    padding-right: 20px;
-}
-
-li {
-    display: inline-flex;
-    float: right;
-    padding: 10px;
-}
-
-li a {
-
-    color: black;
+    justify-content: center;
+    background-image: url(img/japon_tori.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 70px;
+ }
+ #form_principal {
     text-align: center;
-    text-decoration: none;
-}
-
-
-li a:after {
-    content: "";
-    display: block;
-    height: 3px;
-    background-color: red;
-    transform: scale(0, 1);
-    transform-origin: center;
-    transition: transform .45s;
-}
-
-li a:hover::after {
-    transform: scale(1, 1);
-}
-
-.logo {
-    padding: 10px;
-    margin-left: 10px;
-    display: flex;
-    align-items: center;
-}
-
-.logo img {
-    width: 60px;
-    float: left;
-    padding-right: 10px;
-}
-
-
-
-@media only screen and (max-width : 900px) {
-    #links {
-        display: none;
-        flex-direction: row;
-        width: 100%;
-        
+    color: white;
+     background-color: rgba(0, 0, 0, 0.526);
+     width: 30%;
+     padding: 20px;
+     border-radius: 20px;
+    }
+    
+    #opinion{
+        border-radius: 16px;
+        background-color: rgba(0, 0, 0, 0.526);
+    }
+    #correo{
+        background-color: rgba(0, 0, 0, 0.526);
     }
 
-    #menu-toggle {
-        display: block;
-        margin-left: 23%;
-    }
+ @media only screen and (max-width : 900px) {
 
-    .logo{
-        white-space: nowrap;
-        font-size: 14px; 
-    }
+     /* Navbar */
+     #links {
+         display: none;
+         flex-direction: row;
+         width: 100%;
 
-    #navbar.active #links {
-        display: flex
-    }
-}
+     }
+
+     #menu-toggle {
+         display: block;
+         margin-left: 23%;
+     }
+
+     .logo {
+         white-space: nowrap;
+         font-size: 14px;
+     }
+
+     #navbar.active #links {
+         display: flex
+     }
+
+     /* Navbar */
+ }
