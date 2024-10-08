@@ -1,17 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+  padding: 0px;
+  font-family: sans-serif;
+  background: #f2f2f2;
 }
 
 #navbar {
-  width:  100%;
+  width: 100%;
   position: sticky;
-  top: 0; 
-  z-index: 1000; 
+  top: 0;
+  z-index: 1000;
   border-bottom: 1px solid rgba(211, 211, 211, 0.525);
   background-color: white;
   display: flex;
@@ -21,7 +24,7 @@
 }
 
 #menu-toggle {
-  display: none; 
+  display: none;
   background: none;
   border: none;
   color: black;
@@ -77,51 +80,117 @@ li a:hover::after {
   padding-right: 10px;
 }
 
+.parallax {
 
+  background-image: url("img/Bienvenidos\ a.png");
+  background-image: linear-gradient(180deg);
+  height: 800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider-container {
+  display: flex;
+  width: 100%;
+  overflow-x: auto
+}
+
+.slider-container img {
+  flex: 0 0 100%;
+  width: 100%;
+  scroll-snap-align: center;
+  background-image: linear-gradient(180deg, #ffffff);
+}
+
+img {
+  width: 100%;
+  /* need to overwrite inline dimensions */
+  height: auto;
+}
+
+.child-page-listing{
+
+  background-color: #ffffff;
+}
+
+h2 {
+  margin-bottom: .5em;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 1em;
+  padding: 50px;
+}
+
+
+/* hover styles */
+.location-listing {
+  position: relative;
+}
+
+.location-image {
+  line-height: 0;
+  overflow: hidden;
+}
+
+.location-image img {
+  filter: blur(0px);
+  transition: filter 0.3s ease-in;
+  transform: scale(1.1);
+}
+
+.location-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .5s;
+  background: rgba(90, 0, 10, 0.4);
+  color: white;
+
+  /* position the text in t’ middle*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-listing:hover .location-title {
+  opacity: 1;
+}
+
+.location-listing:hover .location-image img {
+  filter: blur(2px);
+}
 
 @media only screen and (max-width : 900px) {
   #links {
-      display: none;
-      flex-direction: row;
-      width: 100%;
-      
+    display: none;
+    flex-direction: row;
+    width: 100%;
+
   }
 
   #menu-toggle {
-      display: block;
-      margin-left: 23%;
+    display: block;
+    margin-left: 23%;
   }
 
-  .logo{
-      white-space: nowrap;
-      font-size: 14px; 
+  .logo {
+    white-space: nowrap;
+    font-size: 14px;
   }
 
   #navbar.active #links {
-      display: flex
+    display: flex
   }
 }
-
-  .parallax {
-    
-    background-image: url("img/Bienvenidos\ a.png");
-    background-image: linear-gradient(180deg);
-    height: 500px; 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .slider-container {
-    display: flex;
-    width: 100%;
-    overflow-x: auto
-  
-  }
-  
-  .slider-container img {
-    flex: 0 0 100%;
-    width: 100%;
-    scroll-snap-align: center;
-    background-image: linear-gradient(180deg,#ffffff);
-  }
