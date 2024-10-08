@@ -1,12 +1,12 @@
-/* Navbar */
-
-#navbar {
+ /* Navbar */
+ #navbar {
+  width: 99%;
   position: sticky;
   top: 0;
   z-index: 1000;
   border-bottom: 1px solid rgba(211, 211, 211, 0.525);
-  display: flex;
   background-color: white;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px;
@@ -25,6 +25,7 @@ ul {
   list-style-type: none;
   overflow: hidden;
   background-color: white;
+  padding-right: 20px;
 }
 
 li {
@@ -34,10 +35,12 @@ li {
 }
 
 li a {
+
   color: black;
   text-align: center;
   text-decoration: none;
 }
+
 
 li a:after {
   content: "";
@@ -46,7 +49,7 @@ li a:after {
   background-color: red;
   transform: scale(0, 1);
   transform-origin: center;
-  transition: transform 0.45s;
+  transition: transform .45s;
 }
 
 li a:hover::after {
@@ -66,7 +69,7 @@ li a:hover::after {
   padding-right: 10px;
 }
 
-/* FIN NAVBAR */
+/* Navbar */
 
 /* TARJETAS DESTINOS */
 .grid-container-tarjetas {
@@ -415,20 +418,59 @@ h1 + p, p + p {
 }
 
 /*************** Media navbar en movil ***************/
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width : 600px) {
+
   /* Navbar */
   #links {
-    display: none;
-    flex-direction: row;
-    width: 100%;
+      display: none;
+      flex-direction: row;
+      width: 100%;
+
   }
 
   #menu-toggle {
-    display: block;
+      display: block;
+      margin-left: 23%;
+  }
+
+  .logo {
+      white-space: nowrap;
+      font-size: 14px;
   }
 
   #navbar.active #links {
-    display: flex;
+      display: flex
   }
+
+  /* Navbar */
+
+}
+
+@media only screen and (min-width:601px)and (max-width : 900px) {
+
+ /* Navbar */
+ #links {
+     display: none;
+     flex-direction: row;
+     width: 100%;
+
+ }
+
+ #menu-toggle {
+     display: block;
+     margin-left: 23%;
+ }
+
+ .logo {
+     white-space: nowrap;
+     font-size: 14px;
+ }
+
+ #navbar.active #links {
+     display: flex
+ }
+
+ /* Navbar */
+
 }
 
