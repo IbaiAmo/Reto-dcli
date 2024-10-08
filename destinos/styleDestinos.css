@@ -400,60 +400,90 @@ h1 + p, p + p {
 }
 
 
-/*************** Media navbar en movil ***************/
-@media only screen and (max-width : 600px) {
+ /*************** Media navbar en movil ***************/
+ @media only screen and (max-width : 600px) {
 
   /* Navbar */
   #links {
-      display: none;
-      flex-direction: row;
-      width: 100%;
+    display: none;
+    flex-direction: row;
+    width: 100%;
 
   }
 
   #menu-toggle {
-      display: block;
-      margin-left: 23%;
+    display: block;
+    margin-left: 23%;
   }
 
   .logo {
-      white-space: nowrap;
-      font-size: 14px;
+    white-space: nowrap;
+    font-size: 14px;
   }
 
   #navbar.active #links {
-      display: flex
+    display: flex
   }
 
   /* Navbar */
+
+  /* TARJETAS DESTINOS */
+  .grid-container-tarjetas {
+    grid-template-columns: repeat(1, 1fr);
+
+
+  }
+
+  /* CAROUSEL */
+
+  div.item {
+
+    width: 70%;
+  }
 
 }
 
 @media only screen and (min-width:601px)and (max-width : 900px) {
 
- /* Navbar */
- #links {
-     display: none;
-     flex-direction: row;
-     width: 100%;
+  /* Navbar */
+  #links {
+    display: none;
+    flex-direction: row;
+    width: 100%;
 
+  }
+
+  #menu-toggle {
+    display: block;
+    margin-left: 23%;
+  }
+
+  .logo {
+    white-space: nowrap;
+    font-size: 14px;
+  }
+
+  #navbar.active #links {
+    display: flex
+  }
+
+  /* Navbar */
+
+  /* TARJETAS DESTINOS */
+  .grid-container-tarjetas {
+    grid-template-columns: repeat(3, 1fr);
+
+    .imagenJapon {
+      display: none;
+    }
+
+  }
+
+  /* CAROUSEL */
+
+  div.item {
+
+   width: 70%;
  }
-
- #menu-toggle {
-     display: block;
-     margin-left: 23%;
- }
-
- .logo {
-     white-space: nowrap;
-     font-size: 14px;
- }
-
- #navbar.active #links {
-     display: flex
- }
-
- /* Navbar */
-
 }
 
