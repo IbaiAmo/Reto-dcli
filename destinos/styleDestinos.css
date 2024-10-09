@@ -1,3 +1,7 @@
+ *{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+ 
  /* Navbar */
  #navbar {
   width: 99%;
@@ -69,11 +73,84 @@ li a:hover::after {
   padding-right: 10px;
 }
 
-/* Navbar */
+/* FIN Navbar */
+
+/*EFECTO PARALLAX*/
+.portadaTituloDes{
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  z-index: 2;
+  color: white;
+  font-size: 80px;
+  position: relative; /*h1 se superponga */
+
+  /*Bordes h1*/
+  border: 3px solid rgba(255, 255, 255, 0.8); 
+  padding: 15px; 
+  border-radius: 15px; 
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3), 0 0 10px rgba(255, 255, 255, 0.5);
+  
+}
+.parallaxBack {
+  z-index: 1;
+  background-image: url("./imgDestinos/japonParallax.jpg");
+  background-image: linear-gradient(180deg);
+  height: 80vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/*.waves {
+  position: absolute;
+  bottom: 0; /* ondas estén pegadas a la parte inferior 
+  left: 0;
+  width: 100%;
+  height: 15vh;
+  z-index: 3; /* ondas por encima de la imagen de fondo */
+  
+  /* margen para corregir posibles espacios en diferentes navegadores 
+  margin-bottom: -7px; /* Fix for Safari gap 
+  min-height: 100px;
+  max-height: 150px;
+}*/
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
 
 
 /*TARJETAS DESTINOS */
-
 
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
 * {
@@ -92,8 +169,6 @@ li a:hover::after {
 }
 }
 
-
-
 .flip {
   position: relative;
 }
@@ -101,7 +176,7 @@ li a:hover::after {
 .flip > .back {
   display: block;
   transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition-duration: 0.5s;
+  transition-duration: 1s;
   transition-property: transform, opacity;
 }
 .flip > .front {
@@ -163,70 +238,7 @@ li a:hover::after {
   text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04), 3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04), 0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04), 7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04), 9px 9px rgba(0, 0, 0, 0.04), 0.3125rem 0.3125rem rgba(0, 0, 0, 0.04), 11px 11px rgba(0, 0, 0, 0.04), 12px 12px rgba(0, 0, 0, 0.04), 13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04), 0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04), 17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04), 19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04);
 }
 
-/* TARJETAS DESTINOS */
-.grid-container-tarjetas {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  padding: 20px;
 
-  .imagenJapon {
-    margin-top: 75px;
-  }
-
-  .cardKanto {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    text-align: center;
-    border: 1px solid #333;
-  }
-
-  .cardKanto img {
-    border-radius: 10px 10px 10px 10px;
-  }
-
-  .cardKanto:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  }
-
-  .containerTarjeta {
-    padding: 2px 16px;
-  }
-}
-
-
-
-
-/* TARJETAS DESTINOS */
-.grid-container-tarjetas {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  padding: 20px;
-
-  .imagenJapon {
-    margin-top: 75px;
-  }
-
-  .cardKanto {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    text-align: center;
-    border: 1px solid #333;
-  }
-
-  .cardKanto img {
-    border-radius: 10px 10px 10px 10px;
-  }
-
-  .cardKanto:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  }
-
-  .containerTarjeta {
-    padding: 2px 16px;
-  }
-}
 
 /************* Destinos imagenes *************/
 .titulo {
@@ -259,6 +271,8 @@ li a:hover::after {
   /* Dos filas de 200px */
   grid-gap: 10px;
   padding: 20px;
+
+  overflow: hidden;
 }
 
 .caja img {
@@ -266,6 +280,11 @@ li a:hover::after {
   height: 100%;
   object-fit: cover;
   border-radius: 10px 10px 10px 10px;
+
+  transition: transform 0.5s ease;
+}
+.caja img:hover {
+  transform: scale(0.9);
 }
 
 .imagen-grande {
@@ -282,9 +301,22 @@ li a:hover::after {
   /* Segunda fila */
 }
 
+/*TEXTOS KANTO*/
+
 .texto{
   margin: 20px;
 }
+
+.texto2 {
+  background-color: rgba(209, 107, 141, 0.486);; /* Fondo rosa claro */
+  border-radius: 15px; /* Bordes redondeados */
+  padding: 15px; /* Espaciado interno */
+  margin: 20px; /* Margen externo */
+  font-size: 18px; /* Tamaño de fuente (opcional) */
+  line-height: 1.5; /* Espaciado entre líneas (opcional) */
+  width: 50%;
+}
+
 /*************Carousel*************/
 
 .carouselPrincipal {
@@ -319,7 +351,7 @@ div.item {
   width: 30%;
   height: 400px;
 
-  background-color: coral; 
+  /*background-color: coral;*/ 
   --r: calc(var(--position) - var(--offset));
   --abs: max(calc(var(--r) * -1), var(--r));
   transition: all 0.25s linear;
@@ -404,8 +436,6 @@ input:nth-of-type(5):checked ~ main#carousel {
   --position: 5;
 }
 
-
-
 /*************** TARJETAS REGIONES DE KANTO ***************/
 .title {
   font-family: "Raleway";
@@ -474,8 +504,8 @@ h1 + p, p + p {
 .card-bg {
   opacity: 0.5;
   position: absolute;
-  top: -20px;
-  left: -20px;
+  /*top: -20px;
+  left: -20px;*/
   width: 100%;
   height: 100%;
   padding: 20px;
