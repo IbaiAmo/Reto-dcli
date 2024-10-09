@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="actividades.css">
+    <title>Actividades</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <a class="logo" href="#">
+        <img src="img/logo.png" alt="Logo de Turismo por Japón" />
+        <span>Turismo por Japón</span>
+      </a>
+      <button id="menu-toggle">☰</button>
+      <ul class="links">
+        <span id="menu-close">x</span>
+        <div class="separadorBorde"></div>
+        <li><a href="#">Destinos</a></li>
+        <li><a href="#">Actividades</a></li>
+        <div class="separadorBorde"></div>
+        <div class="redesSoc">
+          <a href="https://www.instagram.com/visitjapan_es/" id="insta">
+            <i class="ri-instagram-line"></i>
+          </a>
+          <a href="https://www.facebook.com/VisitJapanES/" id="facebook">
+            <i class="ri-facebook-fill"></i>
+          </a>
+          <a href="https://www.youtube.com/user/visitjapan/featured" id="youtube">
+            <i class="ri-youtube-line"></i>
+          </a>
+        </div>
+      </ul>
+      <div class="fondoNegro"></div>
+    </nav>
+
+    <div class="portada">
+      <div class="titulo">
+        <h1>Cosas para hacer en Japón</h1>
+        <h3>Disfruta de todas las actividades que puedas encontrar.</h3>
+      </div>
+
+      <div class="olas">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+        </svg>
+        </div>
+    </div>
+
+    <main>
+
+      <div class="carrousel">
+        <div id="flechaIzq">
+          <i class="ri-arrow-left-s-line"></i>
+        </div>        
+        <div class="carContainer">
+          <div class="carFotos showFoto">
+            <div>
+              <h2>Islas Ogasawara</h2>
+              <p>Visita las islas galápagos de Asia.</p>
+            </div>
+            <img src="https://cdn.loquis.com/prod/loquis/pictures/25881dc2-e4d2-4a4e-8bb8-fcfa494aeb8b-720.jpg">
+          </div>
+
+          <div class="carFotos">
+            <div>
+              <h2>Monumento de la paz de Hiroshima</h2>
+              <p>Un recordatorio estructural de un pasado doloroso.</p>
+            </div>
+            <img src="https://whc.unesco.org/uploads/thumbs/site_0775_0001-594-0-20151105113749.jpg">
+          </div>
+
+          <div class="carFotos">
+            <div>
+              <h2>Tiendas de antigüedades y mercadillos</h2>
+              <p>Mercado Setagaya Boroichi - Tokio</p>
+            </div>
+            <img src="https://media.timeout.com/images/103966602/750/422/image.jpg">
+          </div>
+        </div>
+        <div id="flechaDer">
+          <i class="ri-arrow-right-s-line"></i>
+        </div>   
+      </div>
+
+    </main>
+
+    <script src="nav.js"></script>
+    <script src="carrousel.js"></script>
+  </body>
+</html>
