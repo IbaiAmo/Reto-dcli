@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto';
+}
+
+:root{
+    --border: #d3d3d3;
+}
+
+#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--border);
+    padding-inline: 20px;
+    z-index: 99999;
+    background-color: white;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: black;
+
+    & img{
+        width: 90px;
+    }
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 35px;
+    
+    & li a{
+        color: black;
+        text-decoration: none;
+    }
+}
+
+#menu-close{
+    display: none;
+}
+
+#menu-toggle{
+    display: none;
+}
+
+li a:after {
+    content: "";
+    display: block;
+    height: 3px;
+    background-color: #af253e;
+    transform: scale(0, 1);
+    transform-origin: center;
+    transition: transform .45s;
+}
+
+li a:hover::after {
+    transform: scale(1, 1);
+}
+
+.fondoNegro{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #0000009a;
+}
+
+.redesSoc{
+    display: none;
+}
+
+@media (width < 700px){
+    #menu-toggle{
+        all: unset;
+        cursor: pointer;
+        display: block;
+        height: fit-content;
+        font-size: 24px;
+    }
+
+    .links{
+        position: fixed;
+        z-index: 99999;
+        top: 0;
+        right: -100vw;
+        background-color: white;
+        width: 70%;
+        height: 100vh;
+        border-left: 2px solid var(--border);
+        flex-direction: column;
+        align-items: start;
+        gap: 30px;
+        padding-top: 62px;
+        transition: ease-out .4s;
+
+        & li{
+
+            margin-left: 30px;
+
+            & a{
+                font-size: 28px;
+                color: #000000;
+            }
+        }
+    }
+
+    #menu-close{
+        display: block;
+        font-size: 32px;
+        user-select: none;
+        cursor: pointer;
+        color: #000000;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+
+    .separadorBorde{
+        height: 2px;
+        background-color: var(--border);
+        width: 100%;
+    }
+
+    .redesSoc{
+        display: flex;
+        gap: 15px;
+        padding-left: 30px;
+
+        & a{
+            text-decoration: none;
+            color: black;
+        }
+
+        & i{
+            font-size: 20px;
+        }
+    }
+
+    #insta:hover{
+        background: -webkit-radial-gradient(#405de6,#c13584);
+        background-clip: text;
+        color: transparent;
+    }
+    #facebook:hover{
+        color: #3b5998;
+    }
+    #youtube:hover{
+        color: #c4302b;
+    }
+
+    .active{
+        right: 0;
+    }
+}
+
+@media (width < 500px){
+    .logo img{
+        width: 60px;
+    }
+
+    .links li a{
+        font-size: 24px;
+    }
+}
