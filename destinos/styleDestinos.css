@@ -4,7 +4,7 @@
  
  /* Navbar */
  #navbar {
-  width: 99%;
+  width: 100%;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -84,18 +84,14 @@ li a:hover::after {
   font-size: 80px;
   position: relative; /*h1 se superponga */
 
-  /*Bordes h1*/
-  border: 3px solid rgba(255, 255, 255, 0.8); 
-  padding: 15px; 
-  border-radius: 15px; 
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3), 0 0 10px rgba(255, 255, 255, 0.5);
   
 }
 .parallaxBack {
   z-index: 1;
-  background-image: url("./imgDestinos/japonParallax.jpg");
+  background-image: url("./imgDestinos/parallaxDestinos.jpg");
   background-image: linear-gradient(180deg);
   height: 80vh;
+  width: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -107,19 +103,19 @@ li a:hover::after {
   position: relative;
 }
 
-/*.waves {
+.waves {
   position: absolute;
-  bottom: 0; /* ondas estén pegadas a la parte inferior 
+  bottom: 0; 
   left: 0;
   width: 100%;
   height: 15vh;
-  z-index: 3; /* ondas por encima de la imagen de fondo */
+  z-index: 3;
   
-  /* margen para corregir posibles espacios en diferentes navegadores 
-  margin-bottom: -7px; /* Fix for Safari gap 
+  
+  margin-bottom: -7px;
   min-height: 100px;
   max-height: 150px;
-}*/
+}
 
 .parallax > use {
   animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
@@ -170,9 +166,7 @@ li a:hover::after {
 }
 
 
-.flip {
-  position: relative;
-}
+
 .flip > .front,
 .flip > .back {
   display: block;
@@ -454,7 +448,7 @@ h1 + p, p + p {
   margin-top: 10px;
 }
 
-.container {
+.container{
   padding: 40px 80px;
   display: flex;
   flex-wrap: wrap;
@@ -505,10 +499,11 @@ h1 + p, p + p {
 .card-bg {
   opacity: 0.5;
   position: absolute;
-  /*top: -20px;
-  left: -20px;*/
-  width: 100%;
-  height: 100%;
+  top: -20px;
+  left: -20px;
+  width: 120%;
+  height: 120%;
+  
   padding: 20px;
   background-repeat: no-repeat;
   background-position: center;
@@ -584,11 +579,20 @@ h1 + p, p + p {
 
   /* Navbar */
 
+  /* Parallax */
+    
+  .portadaTituloDes{
+    font-size: 45px;
+    
+  }
+/* Texto info */
+  .texto2{
+    width: 90%;
+  }
+
   /* TARJETAS DESTINOS */
-  .grid-container-tarjetas {
-    grid-template-columns: repeat(1, 1fr);
-
-
+  .flip {
+    width: 100%;
   }
 
   /* CAROUSEL */
@@ -600,7 +604,7 @@ h1 + p, p + p {
 
 }
 
-@media only screen and (min-width:601px)and (max-width : 900px) {
+@media only screen and (min-width:601px)and (max-width : 1023px) {
 
   /* Navbar */
   #links {
@@ -626,14 +630,16 @@ h1 + p, p + p {
 
   /* Navbar */
 
+   
+
   /* TARJETAS DESTINOS */
-  .grid-container-tarjetas {
-    grid-template-columns: repeat(3, 1fr);
+  .flip {
+    width: 95%;
+  }
 
-    .imagenJapon {
-      display: none;
-    }
-
+  /* Texto info */
+  .texto2{
+    width: 95%;
   }
 
   /* CAROUSEL */
@@ -642,5 +648,22 @@ h1 + p, p + p {
 
    width: 70%;
  }
+ 
+}
+
+@media only screen and (min-width:1024px) and (max-width : 1260px) {
+
+
+
+  /* TARJETAS DESTINOS */
+  .flip {
+    width: 300px;
+  }
+
+
+  .container{
+    flex-wrap: nowrap ;
+  }
+
 }
 
