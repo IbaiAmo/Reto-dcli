@@ -1,13 +1,9 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 body {
   padding: 0px;
   font-family: sans-serif;
-  background: #f2f2f2;
+  background: #ffffff
 }
 
 #navbar {
@@ -80,11 +76,12 @@ li a:hover::after {
   padding-right: 10px;
 }
 
+
 .parallaxBack {
 
   background-image: url("img/Bienvenidos\ a.png");
   background-image: linear-gradient(180deg);
-  height: 85vh;
+  height: 80vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -143,29 +140,67 @@ li a:hover::after {
   }
 }
 
+.tituloSubrayado{
+  margin-top: 60px;
+  text-align: center;
+  padding: -10px;
+  font-size: large;
+  background-color: #ffffff;
+}
+.subrayado {
+  border: 10 solid rgb(219, 130, 160);
+  border-bottom: 5px solid rgb(219, 130, 160);
+  height: 0;
+  width: 300px;
+  margin-top: -10px !important;
+
+}
+
+
+
+
+.tituloLogo img {
+  align-items: center;
+  text-align: center;
+  height: 70px;
+  width: auto
+
+}
+
 .slider-container {
-  display: flex;
   width: 100%;
-  overflow-x: auto
+  height: 500px;
+  overflow: hidden;
+  position: relative;
 }
 
 .slider-item {
-  flex: 0 0 100%;
   width: 100%;
-  scroll-snap-align: center;
-  background-image: linear-gradient(180deg, #ffffff);
-  transition: transform 0.5s ease-in-out;
-  /* Añade transición para la animación */
+  height: 500px;
+  position: absolute;
+  right: 0; /* Posiciona la imagen a la derecha */
+  top: 0;
+  transition: transform 1s ease-in-out; /* Duración de la transición: 1 segundo */
 }
 
-.slide-in {
-  transform: translateX(0);
-  /* Posición inicial de la imagen */
+.slider-item:nth-child(1) {
+  transform: translateX(0); /* Primera imagen en posición inicial */
 }
 
-.slide-out {
-  transform: translateX(-100%);
-  /* Desplaza la imagen hacia la izquierda */
+.slider-item:nth-child(2) {
+  transform: translateX(100%); /* Segunda imagen fuera del contenedor */
+}
+
+.slider-item:nth-child(3) {
+  transform: translateX(200%); /* Tercera imagen fuera del contenedor */
+}
+
+.slider-item:nth-child(4) {
+  transform: translateX(300%); /* Cuarta imagen fuera del contenedor */
+}
+
+.slider-item:nth-child(5) {
+  transform: translateX(400%); /* Quinta imagen fuera del contenedor */
 }
 
 img {
@@ -178,19 +213,7 @@ img {
   background-color: #ffffff;
 }
 
-.tituloLogo{
-  text-align: center;
-  background-color: #ffffff;
-  size: 20%;
-}
 
-.tituloLogo img {
-  align-items: center;
-  text-align: center;
-  height: 70px;
-  width: auto
-
-}
 
 h2 {
   margin-bottom: .5em;
