@@ -343,62 +343,6 @@ h2 {
 }
 
 
-/* Form */
-.formulario {
-  display: flex;
-  justify-content: center;
-  background-image: url(./img/japon_tori.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  margin: 0 auto;
-  padding: 70px 0 70px 0;
-}
-
-#form_principal {
-  text-align: center;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.526);
-  width: 30%;
-  padding: 20px;
-  border-radius: 20px;
-}
-
-#opinion {
-  all: unset;
-  text-align: left;
-  padding: 10px;
-  border: 2px solid;
-  border-radius: 16px;
-  background-color: rgba(0, 0, 0, 0);
-  width: 90%;
-  height: 11em;
-
-  &::placeholder {
-      color: white;
-  }
-}
-
-#correo {
-  all: unset;
-  border-bottom: 2px solid white;
-  width: 94%;
-  text-align: left;
-  background-color: rgba(0, 0, 0, 0);
-  padding: 3px;
-
-  &::placeholder {
-      color: white;
-  }
-}
-
-#boton {
-  all: unset;
-  background-color: rgba(175, 37, 62, 1);
-  padding: 10px 15px 10px 15px;
-  border-radius: 8px;
-}
-
 @media only screen and (max-width : 900px) {
   #links {
     display: none;
