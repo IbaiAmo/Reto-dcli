@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
+  <!-- NAVBAR -->
   <nav id="navbar">
     <div class="logo">
       <img src="img/logo.png" alt="Logo de Turismo por Japón" />
@@ -19,35 +20,137 @@
       <li><a href="#">Actividades</a></li>
       <li><a href="#">Destinos</a></li>
     </ul>
+    
   </nav>
-  <script src="nav.js"></script>
 
 
 
-<div class="parallax"></div>
+  <!-- EFECTO PARALLAX INICIO WEB -->
+  <div class="parallaxBack">
 
-<div class="slider-container">  
-    <img
-      class="slider-item"
-      src="img/nuevoServ.png"
-    />
-    <img
-    class="slider-item"
-    src="img/Adentrate en la cultura tradicional.png"
-  />
-  <img
-  class="slider-item"
-  src="IMG/CONOCE LO MEJOR DE LA GASTRONOMIA.png"
-/>
-<img
-      class="slider-item"
-      src=""
-    />
-  </div>  
+    <div>
+      <h1 class="portadaTituloDes"><b>Japón</b></h1>
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,0,0,0.3)" />
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+      </svg>
+    </div>
+  </div>
 
-<div style="height:1000px;background-color:#ffffff;font-size:36px">
-Mi Gente tamo en Japon
-</div>
+  <!-- SUBRAYADO DE LOS TITULOS -->
+  <div class="tituloSubrayado">
+    <br><br>
+    <h3>Lo Más Destacado</h3>
+    <hr class="subrayado" />
+    <br><br><br>
+  </div>
+
+  <!-- CAROUSEL IMAGENES INICIO -->
+  <!-- <div class="slider-container">
+    <img class="slider-item" src="img/Adentrate en la cultura tradicional.png"
+      data-href="https://www.tu-sitio-web.com/imagen1" />
+    <img class="slider-item" src="img/!Nuevo servicio de Información Gratuito!.png"
+      data-href="https://www.tu-sitio-web.com/imagen1" />
+    <img class="slider-item" src="IMG/CONOCE LO MEJOR DE LA GASTRONOMIA.png"
+      data-href="https://www.tu-sitio-web.com/imagen1" />
+    <img class="slider-item" src="img/1.png" data-href="./../destinos/indexDestinos.html" />
+    <img class="slider-item" src="img/imagen5.png" data-href="https://www.tu-sitio-web.com/imagen1" />
+  </div> -->
+
+  <div class="container">
+    <div class = "container_img_destacado">
+      <div class="content">
+        <h2>Religión</h2>
+      </div>
+    </div>
+    <div class = "container_img_destacado">
+      <div class="content">
+        <h2>Ciudades</h2>
+      </div>
+    </div>
+    <div class = "container_img_destacado">
+      <div class="content">
+        <h2>Cultura</h2>
+      </div>
+    </div>
+    <div class = "container_img_destacado">
+      <div class="content">
+        <h2>Actividades</h2>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script> <!--SCRIPT CAROUSEL INICIO -->
+
+
+  <div class="tituloSubrayado">
+    <h3>Lugares Populares</h3>
+    <hr class="subrayado" />
+    <br>
+  </div>
+
+  <!-- TARJETAS DESTINOS POPULARES WEB INICIO -->
+  <div class="child-page-listing">
+    <div class="grid-container">
+      <article id="3685" class="location-listing">
+        <a class="location-title" href="#">
+          Tokyo </a>
+        <div class="location-image">
+          <a href="./Reto-dcli/destinos/indexDestinos.html">
+            <img width="300" height="169" src="./img/tarjetas/tokyoCarta.jpg" alt="san francisco">
+          </a>
+        </div>
+      </article>
+
+      <article id="3688" class="location-listing">
+        <a class="location-title" href="#">
+          Osaka </a>
+        <div class="location-image">
+          <a href="#">
+            <img width="300" height="169" src="./img/tarjetas/osaka.jpg"
+              alt="london">
+          </a>
+        </div>
+      </article>
+
+      <article id="3691" class="location-listing">
+        <a class="location-title" href="#">
+          Fukui </a>
+        <div class="location-image">
+          <a href="#">
+            <img width="300" height="169" src="./img/tarjetas/fukui.jpg"
+              alt="fukui"> </a>
+        </div>
+      </article>
+    </div>
+  </div>
+  <script src="nav.js"></script> <!--SCRIPT BARRA NAVEGACIÓN -->
+
+
+
+  <div class="tituloSubrayado">
+    <h3>¿QUÉ TE HA PARECIDO?</h3>
+    <hr class="subrayado" />
+    <br>
+  </div>
+  <!-- FORMULARIO -->
+  <div class="formulario">
+    <form id="form_principal">
+      <h1>¿Qué te ha parecido?</h1>
+      <input type="text" id="correo" name="correo" placeholder="Correo electronico"><br><br>
+      <textarea name="opinion" id="opinion" placeholder="Opinión"></textarea><br>
+      <button type="submit" id="boton">Enviar</button>
+    </form>
+  </div>
 
 </body>
+
 </html>

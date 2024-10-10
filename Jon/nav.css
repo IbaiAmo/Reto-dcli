@@ -1,81 +1,174 @@
-#navbar {
-    width:  99%;
-    position: sticky;
-    top: 0; 
-    z-index: 1000; 
-    border-bottom: 1px solid rgba(211, 211, 211, 0.525);
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-}
+ /* Navbar */
+ #navbar {
+     width: 99%;
+     position: sticky;
+     top: 0;
+     z-index: 1000;
+     border-bottom: 1px solid rgba(211, 211, 211, 0.525);
+     background-color: white;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 10px;
+ }
 
-#menu-toggle {
-    display: none; 
-    background: none;
-    border: none;
-    color: black;
-    font-size: 24px;
-    cursor: pointer;
-  }
+ #menu-toggle {
+     display: none;
+     background: none;
+     border: none;
+     color: black;
+     font-size: 24px;
+     cursor: pointer;
+ }
 
-ul {
-    list-style-type: none;
-    overflow: hidden;
-    background-color: white;
-    padding-right: 20px;
-}
+ ul {
+     list-style-type: none;
+     overflow: hidden;
+     background-color: white;
+     padding-right: 20px;
+ }
 
-li {
-    display: inline-flex;
-    float: right;
-    padding: 10px;
-}
+ li {
+     display: inline-flex;
+     float: right;
+     padding: 10px;
+ }
 
-li a {
+ li a {
 
-    color: black;
-    text-align: center;
-    text-decoration: none;
-}
-
-
-li a:after {
-    content: "";
-    display: block;
-    height: 3px;
-    background-color: red;
-    transform: scale(0, 1);
-    transform-origin: center;
-    transition: transform .45s;
-}
-
-li a:hover::after {
-    transform: scale(1, 1);
-}
-
-.logo {
-    padding: 10px;
-    margin-left: 10px;
-    display: flex;
-    align-items: center;
-}
-
-.logo img {
-    width: 60px;
-    float: left;
-    padding-right: 10px;
-}
+     color: black;
+     text-align: center;
+     text-decoration: none;
+ }
 
 
+ li a:after {
+     content: "";
+     display: block;
+     height: 3px;
+     background-color: red;
+     transform: scale(0, 1);
+     transform-origin: center;
+     transition: transform .45s;
+ }
 
-@media only screen and (max-width : 900px) {
+ li a:hover::after {
+     transform: scale(1, 1);
+ }
+
+ .logo {
+     padding: 10px;
+     margin-left: 10px;
+     display: flex;
+     align-items: center;
+ }
+
+ .logo img {
+     width: 60px;
+     float: left;
+     padding-right: 10px;
+ }
+
+ /* Navbar */
+
+ /* Form */
+ .formulario {
+     display: flex;
+     justify-content: center;
+     background-image: url(img/japon_tori.jpg);
+     background-repeat: no-repeat;
+     background-position: center;
+     width: 100%;
+     margin: 0 auto;
+     padding: 70px 0 70px 0;
+ }
+
+ #form_principal {
+     text-align: center;
+     color: white;
+     background-color: rgba(0, 0, 0, 0.526);
+     width: 30%;
+     padding: 20px;
+     border-radius: 20px;
+ }
+
+ #opinion {
+     all: unset;
+     text-align: left;
+     padding: 10px;
+     border: 2px solid;
+     border-radius: 16px;
+     background-color: rgba(0, 0, 0, 0);
+     width: 90%;
+     height: 11em;
+
+     &::placeholder {
+         color: white;
+     }
+ }
+
+ #correo {
+     all: unset;
+     border-bottom: 2px solid white;
+     width: 94%;
+     text-align: left;
+     background-color: rgba(0, 0, 0, 0);
+     padding: 3px;
+
+     &::placeholder {
+         color: white;
+     }
+ }
+
+ #boton {
+     all: unset;
+     background-color: rgba(175, 37, 62, 1);
+     padding: 10px 15px 10px 15px;
+     border-radius: 8px;
+ }
+
+ @media only screen and (max-width : 600px) {
+
+     /* Navbar */
+     #links {
+         display: none;
+         flex-direction: row;
+         width: 100%;
+
+     }
+
+     #menu-toggle {
+         display: block;
+         margin-left: 23%;
+     }
+
+     .logo {
+         white-space: nowrap;
+         font-size: 14px;
+     }
+
+     #navbar.active #links {
+         display: flex
+     }
+
+     /* Navbar */
+
+     /* Form */
+
+     #form_principal {
+         width: 70%;
+         padding: 20px;
+     }
+ }
+
+ @media only screen and (min-width:601px)and (max-width : 900px) {
+
+    /* Navbar */
     #links {
         display: none;
         flex-direction: row;
         width: 100%;
-        
+
     }
 
     #menu-toggle {
@@ -83,12 +176,21 @@ li a:hover::after {
         margin-left: 23%;
     }
 
-    .logo{
+    .logo {
         white-space: nowrap;
-        font-size: 14px; 
+        font-size: 14px;
     }
 
     #navbar.active #links {
         display: flex
+    }
+
+    /* Navbar */
+
+    /* Form */
+
+    #form_principal {
+        width: 50%;
+        padding: 20px;
     }
 }
