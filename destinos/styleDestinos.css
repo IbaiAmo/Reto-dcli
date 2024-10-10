@@ -219,9 +219,10 @@ li a:hover::after {
   background-position: center !important;
   height: 220px;
   padding: 1em 2em;
-  background: #313131;
+  
   border-radius: 10px;
 }
+
 .flip > .front p,
 .flip > .back p {
   font-size: 0.9125rem;
