@@ -5,6 +5,11 @@ body {
   font-family: sans-serif;
   background: #ffffff
 }
+.texto{
+  margin: 20px;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
 #navbar {
   width: 100%;
@@ -150,18 +155,7 @@ li a:hover::after {
   }
 }
 /*Shrinking for mobile*/
-@media (max-width: 768px) {
-  .waves {
-    height:40px;
-    min-height:40px;
-  }
-  .content {
-    height:30vh;
-  }
-  h1 {
-    font-size:24px;
-  }
-}
+
 
 .tituloSubrayado{
   margin-top: 60px;
@@ -342,7 +336,93 @@ h2 {
   filter: blur(2px);
 }
 
+/*mapa*/
+#chartdiv {
+  width: 100%;
+  height: 500px;
+}
 
+/*footer*/
+
+footer {
+  background-color: #f2f2f2;
+  padding: 40px 0;
+  color: #333;
+  /* Añadimos un margen superior para separar el footer del contenido */
+  margin-top: 40px; 
+}
+
+.container-footer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col-md-4 {
+  width: 33.33%;
+  padding: 0 15px;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.social-media {
+  display: flex;
+  margin-top: 20px;
+}
+
+.social-media li {
+  margin-right: 10px;
+}
+
+.social-media i {
+  font-size: 1.5em;
+  color: #333;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 30px;
+}
 @media only screen and (max-width : 900px) {
   #links {
     display: none;
@@ -363,5 +443,100 @@ h2 {
 
   #navbar.active #links {
     display: flex
+  }
+}
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:24px;
+  }
+}
+@media (max-width: 768px) {
+  /* Estilos para Tablet */
+
+  /* Ajustes de la sección de "Lo más destacado" */
+  .container {
+    flex-direction: column; /* Apila las tarjetas en columna */
+    gap: 20px; /* Espacio entre tarjetas */
+    height: auto; /* Altura automática */
+  }
+  .container > div {
+    flex: 0 0 100%; /* Ancho completo para las tarjetas */
+    width: auto; /* Ancho automático */
+  }
+
+  /* Ajustes del Slider */
+  .container > div {
+    height: 250px; /* Altura de las tarjetas */
+  }
+
+  /* Ajustes para el contenido de las tarjetas */
+  .content {
+    font-size: 1rem; /* Tamaño de fuente más pequeño */
+    padding: 10px; /* Menos relleno */
+  }
+
+  /* Ajustes para el título */
+  h1 {
+    font-size: 20px; /* Tamaño de fuente más pequeño */
+  }
+
+  /* Ajustes para el grid de destinos */
+  .grid-container {
+    grid-template-columns: 1fr; /* Una columna para el grid */
+    grid-gap: 10px; /* Menos espacio entre las tarjetas */
+    padding: 20px; /* Menos relleno */
+  }
+
+  /* Ajustes para el mapa */
+  #chartdiv {
+    height: 300px; /* Altura del mapa */
+  }
+
+  /* Ajustes para el footer (si es necesario) */
+  footer {
+    /* ... estilos para el footer en tablet ... */
+  }
+}
+@media (max-width: 320px) {
+  /* Estilos para Móvil */
+
+  /* Ajustes para el slider */
+  .container > div {
+    height: 200px; /* Altura de las tarjetas */
+  }
+
+  /* Ajustes para el contenido de las tarjetas */
+  .content {
+    font-size: 0.8rem; /* Tamaño de fuente aún más pequeño */
+    padding: 5px; /* Menos relleno */
+  }
+
+  /* Ajustes para el título */
+  h1 {
+    font-size: 16px; /* Tamaño de fuente más pequeño */
+  }
+
+  /* Ajustes para el grid de destinos */
+  .grid-container {
+    grid-template-columns: 1fr; /* Una columna para el grid */
+    grid-gap: 5px; /* Menos espacio entre las tarjetas */
+    padding: 10px; /* Menos relleno */
+  }
+
+  /* Ajustes para el mapa */
+  #chartdiv {
+    height: 200px; /* Altura del mapa */
+  }
+
+  /* Ajustes para el footer (si es necesario) */
+  footer {
+    /* ... estilos para el footer en móvil ... */
   }
 }
