@@ -183,7 +183,14 @@ main{
       background-color: #af253e;
     }
   }
+
+  & .filtroActivo{
+    background-color: #af253e;
+    color: white;
+  }
 }
+
+
 
 .actividades{
   display: grid;
