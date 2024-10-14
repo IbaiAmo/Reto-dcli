@@ -5,23 +5,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+    integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
-  
+  <link rel="stylesheet" href="nav.css">
+
 </head>
 
 <body>
   <!-- NAVBAR -->
   <nav id="navbar">
-    <div class="logo">
+    <a class="logo" href="#">
       <img src="img/logo.png" alt="Logo de Turismo por Japón" />
       <span>Turismo por Japón</span>
-    </div>
+    </a>
     <button id="menu-toggle">☰</button>
-    <ul id="links">
-      <li><a href="./../Ibai/actividades.html">Actividades</a></li>
+    <ul class="links">
+      <span id="menu-close">x</span>
+      <div class="separadorBorde"></div>
       <li><a href="./../destinos/indexDestinos.html">Destinos</a></li>
+      <li><a href="./../actividades/actividades.html">Actividades</a></li>
+      <div class="separadorBorde"></div>
+      <div class="redesSoc">
+        <a href="https://www.instagram.com/visitjapan_es/" id="insta">
+          <i class="ri-instagram-line"></i>
+        </a>
+        <a href="https://www.facebook.com/VisitJapanES/" id="facebook">
+          <i class="ri-facebook-fill"></i>
+        </a>
+        <a href="https://www.youtube.com/user/visitjapan/featured" id="youtube">
+          <i class="ri-youtube-line"></i>
+        </a>
+      </div>
     </ul>
-
+    <div class="fondoNegro"></div>
   </nav>
 
 
@@ -55,27 +73,35 @@
   </div>
 
   <div class="container">
-    
-      <div class="container_img_destacado">
+
+    <div class="container_img_destacado">
+      <a href="./../actividades/actividades.html">
         <div class="content">
           <h2>Religión</h2>
         </div>
-      </a></div>
-    
+      </a>
+    </div>
+
     <div class="container_img_destacado">
-      <div class="content">
-        <h2>Ciudades</h2>
-      </div>
+      <a href="./../destinos/indexDestinos.html">
+        <div class="content">
+          <h2>Ciudades</h2>
+        </div>
+      </a>
     </div>
     <div class="container_img_destacado">
-      <div class="content">
-        <h2>Cultura</h2>
-      </div>
+      <a href="./../actividades/actividades.html">
+        <div class="content">
+          <h2>Cultura</h2>
+        </div>
+      </a>
     </div>
     <div class="container_img_destacado">
-      <div class="content">
-        <h2>Actividades</h2>
-      </div>
+      <a href="./../actividades/actividades.html">
+        <div class="content">
+          <h2>Actividades</h2>
+        </div>
+      </a>
     </div>
   </div>
 
@@ -138,6 +164,7 @@
   <br>
   <br>
 
+
   <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
   <script src="https://cdn.amcharts.com/lib/4/maps.js"></script>
   <script src="https://cdn.amcharts.com/lib/4/geodata/japanLow.js"></script>
@@ -154,12 +181,14 @@
       <div class="row-footer">
         <div class="texto">
           <h3>Turismo por Japón</h3>
-          <p>Explora la belleza de Japón con nuestra guía completa de destinos, actividades y cultura. ¡Descubre un mundo de experiencias inolvidables!</p>
+          <p>Explora la belleza de Japón con nuestra guía completa de destinos, actividades y cultura. ¡Descubre un
+            mundo de experiencias inolvidables!</p>
         </div>
+        <br>
         <div class="texto">
           <h3>Opiniones y Sugerencias</h3>
-          <p>¿Tienes alguna duda o quieres compartir tu experiencia? ¡Contáctanos!</p>
-          <a href="./../Turismo Japon/Formulario/form.html" class="btn">Envía tu Feedback</a>
+          <p>¿Tienes alguna duda o quieres compartir tu experiencia? ¡Contáctanos!</p><br>
+          <a href="./../Formulario/form.html" class="btn">Envía tu Feedback</a><br>
         </div>
       </div>
       <div class="copyright">
@@ -167,7 +196,7 @@
       </div>
     </div>
   </footer>
+  <script src="scripts/nav.js"></script>
 </body>
-
 
 </html>
