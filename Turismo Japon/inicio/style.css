@@ -208,9 +208,7 @@ li a:hover::after {
 
     &:nth-of-type(1) {
       background: url("./img/destacado/buda.jpg")
-        no-repeat 50% / cover;
-
-        width: 500px;
+        no-repeat 50% / cover; 
     }
     &:nth-of-type(2) {
       background: url("./img/destacado/japon.jpg")
@@ -241,9 +239,6 @@ li a:hover::after {
         rgba(2, 2, 46, 0.6755077030812324) 0%,
         rgba(255, 255, 255, 0) 100%
       );
-      transform: translatey(100%);
-      transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
-      visibility: hidden;
 
       span {
         display: block;
@@ -387,9 +382,7 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-}
+
 
 .social-media {
   display: flex;
@@ -456,87 +449,41 @@ a:hover {
   h1 {
     font-size:24px;
   }
-}
-@media (max-width: 768px) {
-  /* Estilos para Tablet */
 
-  /* Ajustes de la sección de "Lo más destacado" */
   .container {
-    flex-direction: column; /* Apila las tarjetas en columna */
-    gap: 20px; /* Espacio entre tarjetas */
-    height: auto; /* Altura automática */
+    flex-direction: column; 
+    gap: 20px; 
+    height: auto; 
   }
   .container > div {
-    flex: 0 0 100%; /* Ancho completo para las tarjetas */
-    width: auto; /* Ancho automático */
+    flex: 0 0 100%; 
+    width: auto; 
   }
+
 
   /* Ajustes del Slider */
   .container > div {
-    height: 250px; /* Altura de las tarjetas */
+    height: 250px; 
   }
 
-  /* Ajustes para el contenido de las tarjetas */
+ 
   .content {
-    font-size: 1rem; /* Tamaño de fuente más pequeño */
-    padding: 10px; /* Menos relleno */
+    font-size: 1rem; 
+    padding: 10px; 
   }
 
-  /* Ajustes para el título */
-  h1 {
-    font-size: 20px; /* Tamaño de fuente más pequeño */
-  }
+  
+
 
   /* Ajustes para el grid de destinos */
   .grid-container {
-    grid-template-columns: 1fr; /* Una columna para el grid */
-    grid-gap: 10px; /* Menos espacio entre las tarjetas */
-    padding: 20px; /* Menos relleno */
+    grid-template-columns: 1fr; 
+    grid-gap: 10px; 
+    padding: 20px; 
   }
 
   /* Ajustes para el mapa */
   #chartdiv {
-    height: 300px; /* Altura del mapa */
-  }
-
-  /* Ajustes para el footer (si es necesario) */
-  footer {
-    /* ... estilos para el footer en tablet ... */
-  }
-}
-@media (max-width: 320px) {
-  /* Estilos para Móvil */
-
-  /* Ajustes para el slider */
-  .container > div {
-    height: 200px; /* Altura de las tarjetas */
-  }
-
-  /* Ajustes para el contenido de las tarjetas */
-  .content {
-    font-size: 0.8rem; /* Tamaño de fuente aún más pequeño */
-    padding: 5px; /* Menos relleno */
-  }
-
-  /* Ajustes para el título */
-  h1 {
-    font-size: 16px; /* Tamaño de fuente más pequeño */
-  }
-
-  /* Ajustes para el grid de destinos */
-  .grid-container {
-    grid-template-columns: 1fr; /* Una columna para el grid */
-    grid-gap: 5px; /* Menos espacio entre las tarjetas */
-    padding: 10px; /* Menos relleno */
-  }
-
-  /* Ajustes para el mapa */
-  #chartdiv {
-    height: 200px; /* Altura del mapa */
-  }
-
-  /* Ajustes para el footer (si es necesario) */
-  footer {
-    /* ... estilos para el footer en móvil ... */
+    height: 300px; 
   }
 }
