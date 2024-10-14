@@ -1,0 +1,542 @@
+
+
+body {
+  padding: 0px;
+  font-family: sans-serif;
+  background: #ffffff
+}
+.texto{
+  margin: 20px;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#navbar {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(211, 211, 211, 0.525);
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+#menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: black;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: white;
+  padding-right: 20px;
+}
+
+li {
+  display: inline-flex;
+  float: right;
+  padding: 10px;
+}
+
+li a {
+
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+li a:after {
+  content: "";
+  display: block;
+  height: 3px;
+  background-color: red;
+  transform: scale(0, 1);
+  transform-origin: center;
+  transition: transform .45s;
+}
+
+li a:hover::after {
+  transform: scale(1, 1);
+}
+
+.logo {
+  padding: 10px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 60px;
+  float: left;
+  padding-right: 10px;
+}
+
+/*EFECTO PARALLAX*/
+.portadaTituloDes{
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  z-index: 2;
+  color: white;
+  font-size: 80px;
+  position: relative; 
+
+  /*Bordes h1*/
+  /* border: 3px solid rgba(255, 255, 255, 0.8); 
+  padding: 15px; 
+  border-radius: 15px; 
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3), 0 0 10px rgba(255, 255, 255, 0.5); */
+  
+}
+.parallaxBack {
+  z-index: 1;
+  background-image: url("./img/inicio2.jpg");
+  background-image: linear-gradient(180deg);
+  height: 80vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.waves {
+  position: absolute;
+  bottom: 0; 
+  left: 0;
+  width: 100%;
+  height: 15vh;
+  z-index: 3; 
+  
+  
+  margin-bottom: -7px;  
+  min-height: 100px;
+  max-height: 150px;
+ 
+  
+}
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+
+
+.tituloSubrayado{
+  margin-top: 60px;
+  text-align: center;
+  padding: -10px;
+  font-size: large;
+  background-color: #ffffff;
+}
+.subrayado {
+  border: 10 solid rgb(219, 130, 160);
+  border-bottom: 5px solid rgb(219, 130, 160);
+  height: 0;
+  width: 300px;
+  margin-top: -10px !important;
+
+}
+
+
+
+
+.tituloLogo img {
+  align-items: center;
+  text-align: center;
+  height: 70px;
+  width: auto
+
+}
+
+/*SLIDER*/
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  gap: 50px;
+
+
+  > div {
+    flex: 0 0 200px;
+    border-radius: 0.5rem;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 1px 5px 15px #1e0e3e;
+    position: relative;
+    overflow: hidden;
+
+    &:nth-of-type(1) {
+      background: url("./img/destacado/buda.jpg")
+        no-repeat 50% / cover;
+
+        width: 500px;
+    }
+    &:nth-of-type(2) {
+      background: url("./img/destacado/japon.jpg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(3) {
+      background: url("./img/destacado/cultura.jpg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(4) {
+      background: url("./img/destacado/tokio.jpg")
+        no-repeat 50% / cover;
+    }
+
+    .content {
+      font-size: 1.5rem;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      opacity: 0;
+      flex-direction: column;
+      height: 100%;
+      justify-content: flex-end;
+      background: rgb(2, 2, 46);
+      background: linear-gradient(
+        0deg,
+        rgba(2, 2, 46, 0.6755077030812324) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      transform: translatey(100%);
+      transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+      visibility: hidden;
+
+      span {
+        display: block;
+        margin-top: 5px;
+        font-size: 1.2rem;
+      }
+    }
+
+    &:hover {
+      flex: 0 0 250px;
+      box-shadow: 1px 3px 15px #7645d8;
+      transform: translatey(-30px);
+    }
+
+    &:hover .content {
+      opacity: 1;
+      transform: translatey(0%);
+      visibility: visible;
+    }
+  }
+}
+
+/*TARJETAS DESTINOS*/
+img {
+  width: 100%;
+  height: auto;
+}
+
+.child-page-listing {
+
+  background-color: #ffffff;
+}
+
+
+
+h2 {
+  margin-bottom: .5em;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 1em;
+  padding: 50px;
+}
+
+
+/* hover styles */
+.location-listing {
+  position: relative;
+}
+
+.location-image {
+  line-height: 0;
+  overflow: hidden;
+}
+
+.location-image img {
+  filter: blur(0px);
+  transition: filter 0.3s ease-in;
+  transform: scale(1.1);
+}
+
+.location-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .5s;
+  background: rgba(90, 0, 10, 0.4);
+  color: white;
+
+  /* position the text in t’ middle*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-listing:hover .location-title {
+  opacity: 1;
+}
+
+.location-listing:hover .location-image img {
+  filter: blur(2px);
+}
+
+/*mapa*/
+#chartdiv {
+  width: 100%;
+  height: 500px;
+}
+
+/*footer*/
+
+footer {
+  background-color: #f2f2f2;
+  padding: 40px 0;
+  color: #333;
+  /* Añadimos un margen superior para separar el footer del contenido */
+  margin-top: 40px; 
+}
+
+.container-footer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col-md-4 {
+  width: 33.33%;
+  padding: 0 15px;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.social-media {
+  display: flex;
+  margin-top: 20px;
+}
+
+.social-media li {
+  margin-right: 10px;
+}
+
+.social-media i {
+  font-size: 1.5em;
+  color: #333;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 30px;
+}
+@media only screen and (max-width : 900px) {
+  #links {
+    display: none;
+    flex-direction: row;
+    width: 100%;
+
+  }
+
+  #menu-toggle {
+    display: block;
+    margin-left: 23%;
+  }
+
+  .logo {
+    white-space: nowrap;
+    font-size: 14px;
+  }
+
+  #navbar.active #links {
+    display: flex
+  }
+}
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:24px;
+  }
+}
+@media (max-width: 768px) {
+  /* Estilos para Tablet */
+
+  /* Ajustes de la sección de "Lo más destacado" */
+  .container {
+    flex-direction: column; /* Apila las tarjetas en columna */
+    gap: 20px; /* Espacio entre tarjetas */
+    height: auto; /* Altura automática */
+  }
+  .container > div {
+    flex: 0 0 100%; /* Ancho completo para las tarjetas */
+    width: auto; /* Ancho automático */
+  }
+
+  /* Ajustes del Slider */
+  .container > div {
+    height: 250px; /* Altura de las tarjetas */
+  }
+
+  /* Ajustes para el contenido de las tarjetas */
+  .content {
+    font-size: 1rem; /* Tamaño de fuente más pequeño */
+    padding: 10px; /* Menos relleno */
+  }
+
+  /* Ajustes para el título */
+  h1 {
+    font-size: 20px; /* Tamaño de fuente más pequeño */
+  }
+
+  /* Ajustes para el grid de destinos */
+  .grid-container {
+    grid-template-columns: 1fr; /* Una columna para el grid */
+    grid-gap: 10px; /* Menos espacio entre las tarjetas */
+    padding: 20px; /* Menos relleno */
+  }
+
+  /* Ajustes para el mapa */
+  #chartdiv {
+    height: 300px; /* Altura del mapa */
+  }
+
+  /* Ajustes para el footer (si es necesario) */
+  footer {
+    /* ... estilos para el footer en tablet ... */
+  }
+}
+@media (max-width: 320px) {
+  /* Estilos para Móvil */
+
+  /* Ajustes para el slider */
+  .container > div {
+    height: 200px; /* Altura de las tarjetas */
+  }
+
+  /* Ajustes para el contenido de las tarjetas */
+  .content {
+    font-size: 0.8rem; /* Tamaño de fuente aún más pequeño */
+    padding: 5px; /* Menos relleno */
+  }
+
+  /* Ajustes para el título */
+  h1 {
+    font-size: 16px; /* Tamaño de fuente más pequeño */
+  }
+
+  /* Ajustes para el grid de destinos */
+  .grid-container {
+    grid-template-columns: 1fr; /* Una columna para el grid */
+    grid-gap: 5px; /* Menos espacio entre las tarjetas */
+    padding: 10px; /* Menos relleno */
+  }
+
+  /* Ajustes para el mapa */
+  #chartdiv {
+    height: 200px; /* Altura del mapa */
+  }
+
+  /* Ajustes para el footer (si es necesario) */
+  footer {
+    /* ... estilos para el footer en móvil ... */
+  }
+}
