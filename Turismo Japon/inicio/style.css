@@ -472,8 +472,6 @@ a {
     padding: 10px; 
   }
 
-  
-
 
   /* Ajustes para el grid de destinos */
   .grid-container {
@@ -485,5 +483,13 @@ a {
   /* Ajustes para el mapa */
   #chartdiv {
     height: 300px; 
+  }
+
+  .row-footer{
+    display: flex;
+    flex-direction: column;
+    align-content:center;
+    
+    
   }
 }
