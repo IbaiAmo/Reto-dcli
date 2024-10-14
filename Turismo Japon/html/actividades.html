@@ -4,22 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="nav.css">
-    <link rel="stylesheet" href="actividades.css">
-    <title>Actividades</title>
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/actividades.css">
+    <link rel="icon" href="../img/logo.png">
+    <title>Actividades - Disfruta de lo mejor en Japón</title>
   </head>
   <body>
     <nav id="navbar">
-      <a class="logo" href="../inicio/index.html">
-        <img src="img/logo.png" alt="Logo de Turismo por Japón" />
+      <a class="logo" href="./index.html">
+        <img src="../img/logo.png" alt="Logo de Turismo por Japón" />
         <span>Turismo por Japón</span>
       </a>
       <button id="menu-toggle">☰</button>
       <ul class="links">
         <span id="menu-close">x</span>
         <div class="separadorBorde"></div>
-        <li><a href="../destinos/indexDestinos.html">Destinos</a></li>
-        <li><a href="./actividades.html">Actividades</a></li>
+        <li><a href="./indexDestinos.html">Destinos</a></li>
+        <li><a href="./actividades.html" class="paginaActiva">Actividades</a></li>
         <div class="separadorBorde"></div>
         <div class="redesSoc">
           <a href="https://www.instagram.com/visitjapan_es/" id="insta">
@@ -110,11 +111,11 @@
      </div>
 
      <div class="btnFiltros">
-      <button id="" class="filtroActivo">Todos</button>
-      <button id="">Relajación</button>
-      <button id="">Historia</button>
-      <button id="">Festivales y eventos</button>
-      <button id="">Naturaleza</button>
+      <button class="filtroActivo">Todos</button>
+      <button>Relajación</button>
+      <button>Historia</button>
+      <button>Festivales y eventos</button>
+      <button>Naturaleza</button>
      </div>
 
      <div class="actividades">
@@ -222,7 +223,7 @@
           <div class="texto">
             <h3>Opiniones y Sugerencias</h3>
             <p>¿Tienes alguna duda o quieres compartir tu experiencia? ¡Contáctanos!</p><br>
-            <a href="./../Formulario/form.html" class="btn">Envía tu Feedback</a><br>
+            <a href="./form.html" class="btn">Envía tu Feedback</a><br>
           </div>
         </div>
         <div class="copyright">
@@ -243,9 +244,9 @@
         </div>
       </div>
     </template>
-    <script src="scripts/nav.js"></script>
-    <script src="scripts/carrousel.js"></script>
-    <script src="scripts/filtros.js"></script>
-    <script src="scripts/informacion.js"></script>
+    <script src="../scripts/nav.js"></script>
+    <script src="../scripts/carrousel.js"></script>
+    <script src="../scripts/filtros.js"></script>
+    <script src="../scripts/informacion.js"></script>
   </body>
 </html>

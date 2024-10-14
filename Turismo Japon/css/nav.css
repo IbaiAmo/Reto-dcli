@@ -84,6 +84,15 @@ li a:hover::after {
     display: none;
 }
 
+.paginaActiva::after{
+    content: "";
+    display: block;
+    height: 3px;
+    background-color: #af253e;
+    transform: scale(1, 1);
+    transform-origin: center;
+}
+
 footer {
     background-color: #f2f2f2;
     padding: 40px;

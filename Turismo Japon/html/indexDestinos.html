@@ -4,24 +4,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="styleDestinos.css" />
-  <link rel="stylesheet" href="nav.css" />
+  <link rel="stylesheet" href="../css/styleDestinos.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="icon" href="../img/logo.png">
+  <title>Destinos - Elige el mejor viaje</title>
 </head>
 
 <body>
   <nav id="navbar">
-    <a class="logo" href="../inicio/index.html">
-      <img src="./imgDestinos/logo.png" alt="Logo de Turismo por Japón" />
+    <a class="logo" href="./index.html">
+      <img src="../img/logo.png" alt="Logo de Turismo por Japón" />
       <span>Turismo por Japón</span>
     </a>
     <button id="menu-toggle">☰</button>
     <ul class="links">
       <span id="menu-close">x</span>
       <div class="separadorBorde"></div>
-      <li><a href="./indexDestinos.html">Destinos</a></li>
-      <li><a href="../actividades/actividades.html">Actividades</a></li>
+      <li><a href="./indexDestinos.html" class="paginaActiva">Destinos</a></li>
+      <li><a href="./actividades.html">Actividades</a></li>
       <div class="separadorBorde"></div>
       <div class="redesSoc">
         <a href="https://www.instagram.com/visitjapan_es/" id="insta">
@@ -37,7 +38,7 @@
     </ul>
     <div class="fondoNegro"></div>
   </nav>
-  <script src="nav.js"></script>
+
 
   <!-- EFECTO PARALLAX DESTINOS -->
   <div class="parallaxBack">
@@ -117,24 +118,24 @@
   <div class="grid-container">
     <!-- Primera fila de imagenes-->
     <div class="caja">
-      <img src="./imgDestinos/japon kimono.jpeg" alt="Imagen 1" />
+      <img src="../img/imgDestinos/japon kimono.jpeg" alt="Imagen 1" />
     </div>
     <div class="caja">
-      <img src="./imgDestinos/tokio.jpg" alt="Imagen 2" />
+      <img src="../img/imgDestinos/tokio.jpg" alt="Imagen 2" />
     </div>
     <div class="caja">
-      <img src="./imgDestinos/fuji.jpg" alt="Imagen 3" />
+      <img src="../img/imgDestinos/fuji.jpg" alt="Imagen 3" />
     </div>
     <div class="caja imagen-grande">
-      <img src="./imgDestinos/fuji2.jpg" alt="Imagen 4" />
+      <img src="../img/imgDestinos/fuji2.jpg" alt="Imagen 4" />
     </div>
 
     <!-- Segunda fila de imagenes-->
     <div class="caja">
-      <img src="./imgDestinos/japon.jpg" alt="Imagen 5" />
+      <img src="../img/imgDestinos/japon.jpg" alt="Imagen 5" />
     </div>
     <div class="caja imagen-extendida">
-      <img src="./imgDestinos/gunma.jpg" alt="Imagen 6" />
+      <img src="../img/imgDestinos/gunma.jpg" alt="Imagen 6" />
     </div>
   </div>
 
@@ -218,7 +219,7 @@
         <div class="texto">
           <h3>Opiniones y Sugerencias</h3>
           <p>¿Tienes alguna duda o quieres compartir tu experiencia? ¡Contáctanos!</p><br>
-          <a href="./../Formulario/form.html" class="btn">Envía tu Feedback</a><br>
+          <a href="./form.html" class="btn">Envía tu Feedback</a><br>
         </div>
       </div>
       <div class="copyright">
@@ -228,9 +229,10 @@
   </footer>
 
   <!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js'></script><script  src="./script.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js'></script>
+  <script  src="../scripts/script.js"></script>
 
-
+  <script src="../scripts/nav.js"></script>
 </body>
 
 </html>

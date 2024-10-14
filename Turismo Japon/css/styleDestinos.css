@@ -17,7 +17,7 @@
 }
 .parallaxBack {
   z-index: 1;
-  background-image: url("./imgDestinos/parallaxDestinos.jpg");
+  background-image: url("../img/imgDestinos/parallaxDestinos.jpg");
   background-image: linear-gradient(180deg);
   height: 80vh;
   width: 100%;
@@ -289,35 +289,35 @@ div.item {
 
 div.item:nth-of-type(1) {
   --offset: 1;
-  background-image: url("./imgDestinos/kanto/kanto1.jpg");
+  background-image: url("../img/imgDestinos/kanto/kanto1.jpg");
   background-size: 500px 400px;
   background-repeat: no-repeat;
   background-position: center;
 }
 div.item:nth-of-type(2) {
   --offset: 2;
-  background-image: url("./imgDestinos/kanto/Gunma.jpg");
+  background-image: url("../img/imgDestinos/kanto/Gunma.jpg");
   background-size: 500px 400px;
   background-repeat: no-repeat;
   background-position: center;
 }
 div.item:nth-of-type(3) {
   --offset: 3;
-  background-image: url("./imgDestinos/kanto/tokyo.jpg");
+  background-image: url("../img/imgDestinos/kanto/tokyo.jpg");
   background-size: 500px 400px;
   background-repeat: no-repeat;
   background-position: center;
 }
 div.item:nth-of-type(4) {
   --offset: 4;
-  background-image: url("./imgDestinos/kanto/kanto2.jpeg");
+  background-image: url("../img/imgDestinos/kanto/kanto2.jpeg");
   background-size: 500px 400px;
   background-repeat: no-repeat;
   background-position: center;
 }
 div.item:nth-of-type(5) {
   --offset: 5;
-  background-image: url("./imgDestinos/kanto/yokohama.jpg");
+  background-image: url("../img/imgDestinos/kanto/yokohama.jpg");
   background-size: 500px 400px;
   background-repeat: no-repeat;
   background-position: center;
@@ -487,30 +487,6 @@ h1 + p, p + p {
  /*************** Media navbar en movil ***************/
  @media only screen and (max-width : 600px) {
 
-  /* Navbar */
-  #links {
-    display: none;
-    flex-direction: row;
-    width: 100%;
-
-  }
-
-  #menu-toggle {
-    display: block;
-    margin-left: 23%;
-  }
-
-  .logo {
-    white-space: nowrap;
-    font-size: 14px;
-  }
-
-  #navbar.active #links {
-    display: flex
-  }
-
-  /* Navbar */
-
   /* Parallax */
     
   .portadaTituloDes{
@@ -537,32 +513,6 @@ h1 + p, p + p {
 }
 
 @media only screen and (min-width:601px)and (max-width : 1023px) {
-
-  /* Navbar */
-  #links {
-    display: none;
-    flex-direction: row;
-    width: 100%;
-
-  }
-
-  #menu-toggle {
-    display: block;
-    margin-left: 23%;
-  }
-
-  .logo {
-    white-space: nowrap;
-    font-size: 14px;
-  }
-
-  #navbar.active #links {
-    display: flex
-  }
-
-  /* Navbar */
-
-   
 
   /* TARJETAS DESTINOS */
   .flip {

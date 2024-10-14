@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(japon_tori.jpg);
+    background-image: url("../img/japon_tori.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -81,3 +81,49 @@
     }
 }
 
+.error{
+    color: red;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 14px;
+    width: 94%;
+    text-align: start;
+}
+
+#error1{
+    margin-top: 5px;
+}
+
+.modal{
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    background-color: #009200;
+    display: flex;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 10px;
+    animation: showModal 4.5s normal ease-out;
+}
+
+@keyframes showModal{
+    0%{
+        transform: translateY(100px);
+        opacity: 0%;
+    }
+
+    15%{
+        transform: translateY(0);
+        opacity: 100%;
+    }
+
+    80%{
+        transform: translateY(0);
+        opacity: 100%; 
+    }
+
+    100%{
+        transform: translateY(100px);
+        opacity: 0%;
+    }
+}
