@@ -1,79 +1,8 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+ 
  *{
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
  }
- 
- /* Navbar */
- #navbar {
-  width: 100%;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  border-bottom: 1px solid rgba(211, 211, 211, 0.525);
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-}
-
-#menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  color: black;
-  font-size: 24px;
-  cursor: pointer;
-}
-
-ul {
-  list-style-type: none;
-  overflow: hidden;
-  background-color: white;
-  padding-right: 20px;
-}
-
-li {
-  display: inline-flex;
-  float: right;
-  padding: 10px;
-}
-
-li a {
-
-  color: black;
-  text-align: center;
-  text-decoration: none;
-}
-
-
-li a:after {
-  content: "";
-  display: block;
-  height: 3px;
-  background-color: red;
-  transform: scale(0, 1);
-  transform-origin: center;
-  transition: transform .45s;
-}
-
-li a:hover::after {
-  transform: scale(1, 1);
-}
-
-.logo {
-  padding: 10px;
-  margin-left: 10px;
-  display: flex;
-  align-items: center;
-}
-
-.logo img {
-  width: 60px;
-  float: left;
-  padding-right: 10px;
-}
-
-/* FIN Navbar */
 
 /*EFECTO PARALLAX*/
 .portadaTituloDes{
@@ -148,7 +77,7 @@ li a:hover::after {
 
 /*TARJETAS DESTINOS */
 
-@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+
 * {
   box-sizing: border-box;
   font-weight: normal;
@@ -219,7 +148,6 @@ li a:hover::after {
   background-position: center !important;
   height: 220px;
   padding: 1em 2em;
-  
   border-radius: 10px;
 }
 
@@ -227,7 +155,8 @@ li a:hover::after {
 .flip > .back p {
   font-size: 0.9125rem;
   line-height: 160%;
-  color: #999;
+  color: #ffffff;
+  text-shadow: 0px 1px 3px black;
 }
 
 .text-shadow {
@@ -249,6 +178,8 @@ li a:hover::after {
   text-decoration: underline;
   text-decoration-color: rgb(219, 130, 160);
   text-decoration-thickness: 7px;
+  text-align: center;
+  margin-block: 30px;
 }
 
 .subrayado {
@@ -256,7 +187,7 @@ li a:hover::after {
   border-bottom: 5px solid rgb(219, 130, 160);
   height: 0;
   width: 40%;
-  margin-top: -10px !important;
+  align-self: center;
 }
 
 .grid-container {
@@ -307,7 +238,7 @@ li a:hover::after {
   background-color: rgba(209, 107, 141, 0.486);; /* Fondo rosa claro */
   border-radius: 15px; /* Bordes redondeados */
   padding: 15px; /* Espaciado interno */
-  margin: 20px; /* Margen externo */
+  margin: 0 auto; /* Margen externo */
   font-size: 18px; /* Tamaño de fuente (opcional) */
   line-height: 1.5; /* Espaciado entre líneas (opcional) */
   width: 50%;
@@ -652,6 +583,7 @@ h1 + p, p + p {
  
 }
 
+
 @media only screen and (min-width:1024px) and (max-width : 1260px) {
 
 
@@ -666,5 +598,13 @@ h1 + p, p + p {
     flex-wrap: nowrap ;
   }
 
+}
+
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
 }
 
