@@ -1,205 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+      integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/nav.css" />
+    <link rel="icon" href="../img/logo.png" />
+    <title>Inicio - Página principal</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
-  integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg=="
-  crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/nav.css">
-  <link rel="icon" href="../img/logo.png">
-  <title>Inicio - Página principal</title>
-</head>
-
-<body>
-  <!-- NAVBAR -->
-  <nav id="navbar">
-    <a class="logo" href="./index.html">
-      <img src="../img/logo.png" alt="Logo de Turismo por Japón" />
-      <span>Turismo por Japón</span>
-    </a>
-    <button id="menu-toggle">☰</button>
-    <ul class="links">
-      <span id="menu-close">x</span>
-      <div class="separadorBorde"></div>
-      <li><a href="./indexDestinos.html">Destinos</a></li>
-      <li><a href="./actividades.html">Actividades</a></li>
-      <div class="separadorBorde"></div>
-      <div class="redesSoc">
-        <a href="https://www.instagram.com/visitjapan_es/" id="insta">
-          <i class="ri-instagram-line"></i>
-        </a>
-        <a href="https://www.facebook.com/VisitJapanES/" id="facebook">
-          <i class="ri-facebook-fill"></i>
-        </a>
-        <a href="https://www.youtube.com/user/visitjapan/featured" id="youtube">
-          <i class="ri-youtube-line"></i>
-        </a>
-      </div>
-    </ul>
-    <div class="fondoNegro"></div>
-  </nav>
-
-
-
-  <!-- EFECTO PARALLAX INICIO WEB -->
-  <div class="parallaxBack">
-
-    <div>
-      <h1 class="portadaTituloDes"><b>Japón</b></h1>
-      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-        <defs>
-          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-        </defs>
-        <g class="parallax">
-          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,0,0,0.3)" />
-          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-          <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-        </g>
-      </svg>
-    </div>
-  </div>
-
-  <!-- SUBRAYADO DE LOS TITULOS -->
-  <div class="tituloSubrayado">
-    <br><br>
-    <h3>Lo Más Destacado</h3>
-    <hr class="subrayado" />
-    <br><br><br>
-  </div>
-
-  <div class="container">
-
-    <div class="container_img_destacado">
-      <a href="./actividades.html">
-        <div class="content">
-          <h2>Religión</h2>
-        </div>
+  <body>
+    <!-- NAVBAR -->
+    <nav id="navbar">
+      <a class="logo" href="./index.html">
+        <img src="../img/logo.png" alt="Logo de Turismo por Japón" />
+        <span>Turismo por Japón</span>
       </a>
-    </div>
-
-    <div class="container_img_destacado">
-      <a href="./indexDestinos.html">
-        <div class="content">
-          <h2>Ciudades</h2>
-        </div>
-      </a>
-    </div>
-    <div class="container_img_destacado">
-      <a href="./actividades.html">
-        <div class="content">
-          <h2>Cultura</h2>
-        </div>
-      </a>
-    </div>
-    <div class="container_img_destacado">
-      <a href="./actividades.html">
-        <div class="content">
-          <h2>Actividades</h2>
-        </div>
-      </a>
-    </div>
-  </div>
-
-
-
-
-  <div class="tituloSubrayado">
-    <h3>Lugares Populares</h3>
-    <hr class="subrayado" />
-    <br>
-  </div>
-
-  <!-- TARJETAS DESTINOS POPULARES WEB INICIO -->
-  <div class="child-page-listing">
-    <div class="grid-container">
-      <article id="3685" class="location-listing">
-        <a class="location-title" href="./indexDestinos.html">
-          Tokyo </a>
-        <div class="location-image">
-          <a href="https://moodle.fpzornotza.com">
-            <img width="300" height="169" src="../img/tarjetas/tokyoCarta.jpg" alt="san francisco">
+      <button id="menu-toggle">☰</button>
+      <ul class="links">
+        <span id="menu-close">x</span>
+        <div class="separadorBorde"></div>
+        <li><a href="./indexDestinos.html">Destinos</a></li>
+        <li><a href="./actividades.html">Actividades</a></li>
+        <div class="separadorBorde"></div>
+        <div class="redesSoc">
+          <a href="https://www.instagram.com/visitjapan_es/" id="insta">
+            <i class="ri-instagram-line"></i>
+          </a>
+          <a href="https://www.facebook.com/VisitJapanES/" id="facebook">
+            <i class="ri-facebook-fill"></i>
+          </a>
+          <a
+            href="https://www.youtube.com/user/visitjapan/featured"
+            id="youtube"
+          >
+            <i class="ri-youtube-line"></i>
           </a>
         </div>
-      </article>
+      </ul>
+      <div class="fondoNegro"></div>
+    </nav>
 
-      <article id="3688" class="location-listing">
-        <a class="location-title" href="./indexDestinos.html">
-          Osaka </a>
-        <div class="location-image">
-          <a href="./indexDestinos.html">
-            <img width="300" height="169" src="../img/tarjetas/osaka.jpg" alt="london">
-          </a>
-        </div>
-      </article>
-
-      <article id="3691" class="location-listing">
-        <a class="location-title" href="./indexDestinos.html">
-          Fukui </a>
-        <div class="location-image">
-          <a href="./indexDestinos.html">
-            <img width="300" height="169" src="../img/tarjetas/fukui.jpg" alt="fukui"> </a>
-        </div>
-      </article>
-    </div>
-  </div>
-
-
-  <div class="tituloSubrayado">
-    <h3>A donde Vamos?</h3>
-    <hr class="subrayado" />
-  </div>
-
-  <p class="texto">¡Descubre los rincones más fascinantes de Japón! Nuestro mapa interactivo te ayudará
-    a planificar tu viaje, mostrándote las principales ciudades, atracciones y regiones del país. <br>
-    ¿Quieres saber más sobre cada destino? Visita la pestaña <a href="./indexDestinos.html">"Destinos"
-    </a>para encontrar información detallada sobre cada región,
-    incluyendo atracciones, actividades, alojamiento y consejos para viajar.<br>
-    ¡Empieza a explorar Japón hoy mismo!<br> <br>
-  </p>
-  <br>
-  <br>
-
-
-
-  <div id="chartdiv">
-    <a href="./indexDestinos.html"></a>
-  </div>
-  <br><br><br>
-
-
-  <footer>
-    <div class="container-footer">
-      <div class="row-footer">
-        <div class="texto">
-          <h3>Turismo por Japón</h3>
-          <p>Explora la belleza de Japón con nuestra guía completa de destinos, actividades y cultura. ¡Descubre un
-            mundo de experiencias inolvidables!</p>
-        </div>
-        <br>
-        <div class="texto">
-          <h3>Opiniones y Sugerencias</h3>
-          <p>¿Tienes alguna duda o quieres compartir tu experiencia? ¡Contáctanos!</p><br>
-          <a href="./form.html" class="btn">Envía tu Feedback</a><br>
-        </div>
-      </div>
-      <div class="copyright">
-        <p>&copy; 2024 Turismo por Japón. Todos los derechos reservados.</p>
+    <!-- EFECTO PARALLAX INICIO WEB -->
+    <div class="parallaxBack">
+      <div>
+        <h1 class="portadaTituloDes"><b>Japón</b></h1>
+        <svg
+          class="waves"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28"
+          preserveAspectRatio="none"
+          shape-rendering="auto"
+        >
+          <defs>
+            <path
+              id="gentle-wave"
+              d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+            />
+          </defs>
+          <g class="parallax">
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="0"
+              fill="rgba(255,255,255,0.7"
+            />
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="3"
+              fill="rgba(255,0,0,0.3)"
+            />
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="5"
+              fill="rgba(255,255,255,0.3)"
+            />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+          </g>
+        </svg>
       </div>
     </div>
-  </footer>
 
-  <script type="javascript" src="../scripts/script.js"></script> <!--SCRIPT CAROUSEL INICIO -->
-  <script src="../scripts/nav.js"></script>
-  <!-- MAPA -->
-  <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
-  <script src="https://cdn.amcharts.com/lib/4/maps.js"></script>
-  <script src="https://cdn.amcharts.com/lib/4/geodata/japanLow.js"></script>
-  <script src="../scripts/mapa.js"></script>
-</body>
+    <!-- SUBRAYADO DE LOS TITULOS -->
+    <div class="tituloSubrayado">
+      <br /><br />
+      <h3>Lo Más Destacado</h3>
+      <hr class="subrayado" />
+      <br /><br /><br />
+    </div>
 
+    <div class="container">
+      <div class="container_img_destacado">
+        <a href="./actividades.html">
+          <div class="content">
+            <h2>Religión</h2>
+          </div>
+        </a>
+      </div>
+
+      <div class="container_img_destacado">
+        <a href="./indexDestinos.html">
+          <div class="content">
+            <h2>Ciudades</h2>
+          </div>
+        </a>
+      </div>
+      <div class="container_img_destacado">
+        <a href="./actividades.html">
+          <div class="content">
+            <h2>Cultura</h2>
+          </div>
+        </a>
+      </div>
+      <div class="container_img_destacado">
+        <a href="./actividades.html">
+          <div class="content">
+            <h2>Actividades</h2>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="tituloSubrayado">
+      <h3>Lugares Populares</h3>
+      <hr class="subrayado" />
+      <br />
+    </div>
+
+    <!-- TARJETAS DESTINOS POPULARES WEB INICIO -->
+    <div class="child-page-listing">
+      <div class="grid-container">
+        <article id="3685" class="location-listing">
+          <a class="location-title" href="./indexDestinos.html"> Tokyo </a>
+          <div class="location-image">
+            <a href="https://moodle.fpzornotza.com">
+              <img
+                width="300"
+                height="169"
+                src="../img/tarjetas/tokyoCarta.jpg"
+                alt="san francisco"
+              />
+            </a>
+          </div>
+        </article>
+
+        <article id="3688" class="location-listing">
+          <a class="location-title" href="./indexDestinos.html"> Osaka </a>
+          <div class="location-image">
+            <a href="./indexDestinos.html">
+              <img
+                width="300"
+                height="169"
+                src="../img/tarjetas/osaka.jpg"
+                alt="london"
+              />
+            </a>
+          </div>
+        </article>
+
+        <article id="3691" class="location-listing">
+          <a class="location-title" href="./indexDestinos.html"> Fukui </a>
+          <div class="location-image">
+            <a href="./indexDestinos.html">
+              <img
+                width="300"
+                height="169"
+                src="../img/tarjetas/fukui.jpg"
+                alt="fukui"
+              />
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="tituloSubrayado">
+      <h3>A donde Vamos?</h3>
+      <hr class="subrayado" />
+    </div>
+
+    <p class="texto">
+      ¡Descubre los rincones más fascinantes de Japón! Nuestro mapa interactivo
+      te ayudará a planificar tu viaje, mostrándote las principales ciudades,
+      atracciones y regiones del país. <br />
+      ¿Quieres saber más sobre cada destino? Visita la pestaña
+      <a href="./indexDestinos.html">"Destinos" </a>para encontrar información
+      detallada sobre cada región, incluyendo atracciones, actividades,
+      alojamiento y consejos para viajar.<br />
+      ¡Empieza a explorar Japón hoy mismo!<br />
+      <br />
+    </p>
+    <br />
+    <br />
+
+    <div id="chartdiv">
+      <a href="./indexDestinos.html"></a>
+    </div>
+    <br /><br /><br />
+
+    <footer>
+      <div class="container-footer">
+        <div class="row-footer">
+          <div class="texto">
+            <h3>Turismo por Japón</h3>
+            <p>
+              Explora la belleza de Japón con nuestra guía completa de destinos,
+              actividades y cultura. ¡Descubre un mundo de experiencias
+              inolvidables!
+            </p>
+          </div>
+          <br />
+          <div class="texto">
+            <h3>Opiniones y Sugerencias</h3>
+            <p>
+              ¿Tienes alguna duda o quieres compartir tu experiencia?
+              ¡Contáctanos!
+            </p>
+            <br />
+            <a href="./form.html" class="btn">Envía tu Feedback</a><br />
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2024 Turismo por Japón. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="javascript" src="../scripts/script.js"></script>
+    <!--SCRIPT CAROUSEL INICIO -->
+    <script src="../scripts/nav.js"></script>
+    <!-- MAPA -->
+    <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/maps.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/geodata/japanLow.js"></script>
+    <script src="../scripts/mapa.js"></script>
+  </body>
 </html>
