@@ -26,11 +26,6 @@ body {
   font-size: 80px;
   position: relative; 
 
-  /*Bordes h1*/
-  /* border: 3px solid rgba(255, 255, 255, 0.8); 
-  padding: 15px; 
-  border-radius: 15px; 
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3), 0 0 10px rgba(255, 255, 255, 0.5); */
   
 }
 .parallaxBack {
@@ -255,7 +250,6 @@ h2 {
   background: rgba(90, 0, 10, 0.4);
   color: white;
 
-  /* position the text in t’ middle*/
   display: flex;
   align-items: center;
   justify-content: center;
@@ -275,6 +269,7 @@ h2 {
   width: 60%;
   margin: auto;
 }
+
 
 
 @media only screen and (max-width : 900px) {
